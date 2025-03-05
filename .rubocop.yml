@@ -1,0 +1,11 @@
+AllCops:
+  TargetRubyVersion: 3.0
+  NewCops: disable
+  Exclude:
+    - 'spec/spec_helper.rb'
+
+Metrics/MethodLength:
+  Max: 15
+
+Style/Documentation:
+  Enabled: false
