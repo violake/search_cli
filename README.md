@@ -36,6 +36,7 @@ docker run --rm -it --name client-search-app client-search
 
 ## How to use this cli
 
+```bash
 =================================================================================================================
 Welcome to Search CLI
 Type 'quit' to exit at any time, 'next' to start a new search, 'help' for command list, Press 'Enter' to continue
@@ -44,6 +45,7 @@ Type 'quit' to exit at any time, 'next' to start a new search, 'help' for comman
   Select search options
     * Press 1 to search
     * Press 2 to view a list of searchable fields
+```
 
 <a id="step-1"></a>1. Press 1 to start search value of a field or check duplication of a field. 2 to show searchable fields
 
