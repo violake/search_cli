@@ -4,6 +4,10 @@ AllCops:
   Exclude:
     - 'spec/spec_helper.rb'
 
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
 Metrics/MethodLength:
   Max: 15
 

@@ -19,10 +19,10 @@ class SearchCli
 
   HELP_MESSAGE = <<~HEREDOC
 
-    =========================================================================================
+    =================================================================================================================
     Welcome to Search CLI
-    Type 'quit' to exit at any time, 'next' to start a new search, Press 'Enter' to continue
-    =========================================================================================
+    Type 'quit' to exit at any time, 'next' to start a new search, 'help' for command list, Press 'Enter' to continue
+    =================================================================================================================
 
     \s\sSelect search options
     \s\s\s\s* Press 1 to search
@@ -95,6 +95,15 @@ class SearchCli
       puts HELP_MESSAGE
     else
       puts "Error Input: '#{command}', try 'help' for correct commands"
+    end
+  end
+
+  # adapt docker-compose input
+  def gets
+    if ARGV.nil?
+      Kernel.gets
+    else
+      $stdin.gets
     end
   end
 end
